@@ -25,44 +25,28 @@
     padding: 5rem 9% 5rem;
   }
 
-  /* .typing-text span::before {
-    content: "Software Developer";
-    color: rgb(248, 113, 113);
-    animation: words 20s infinite;
-  }
 
-  .typing-text span::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
-  }
+ .banner .slider{
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d ;
+    transform: perspective(1000px);
+    animation: autoRun  20s linear infinite;
+ }
 
-  @keyframes cursor{
-    to {
-      border-left: 3px solid rgb(248, 113, 113);
-    }
+ @keyframes autoRun{
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }to{
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
   }
+ }
 
-  @keyframes words {
-    0%, 20%{
-      content: "Web Developer"
-    }
-    21%, 40%{
-      content: "Gamer"
-    }
-    41%, 60%{
-      content: "Content Creator"
-    }
-    61%, 80%{
-      content: "Web Designer"
-    }
-    81%, 100%{
-      content: "Front-End Developer"
-    }
-  } */
+ .banner .slider .item{
+  transform: 
+  rotateY(calc((var(--position) - 1) * (360/ var(--quantity)) * 1deg))
+  translateZ(500px);
+ }
 }
