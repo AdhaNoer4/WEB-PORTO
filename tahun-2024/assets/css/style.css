@@ -51,8 +51,41 @@
 
   .banner .content h1 {
     font-family: "ICA Rubrik", sans-serif;
-   -webkit-text-stroke: 2px #facc15;
+    -webkit-text-stroke: 2px #facc15;
   }
 
- 
+  /* .about-me .box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+  }
+
+  .about-me .box::before {
+    content: ("");
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+  }
+
+  .about-me .box::after {
+    content: ("");
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    filter: blur(30px);
+  } */
 }
