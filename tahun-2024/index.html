@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="black">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,15 +7,25 @@
     <title>Noeru Porto 2024</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://kit.fontawesome.com/9694ff1d73.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="m-10 fixed top-0 left-0 w-full py-4 px-[9%] bg-transparent drop-shadow-lg flex justify-between items-center z-50">
       <a href="#" class="logo text-5xl text-red-400 font-extrabold cursor-pointer transition ease hover:scale-110">Noeru</a>
       <nav class="text-3xl text-white">
         <a href="#home" class="ml-16 font-medium transition ease duration-150 border-b-2 border-yellow-400 text-red-400">Home</a>
-        <a href="#about-me" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">About</a>
+        <a href="#about-me" >
+          <div class="dropdown dropdown-hover">
+            <div tabindex="0" role="button" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">About <span><i class="fa-solid fa-caret-down"></i></span></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a href="#tech" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Technology</a></li>
+              <li><a href="#certificate" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Certificate</a></li>
+            </ul>
+          </div>
+
+        </a>
         <a href="#project" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Project</a>
         <a href="#contact" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Contact</a>
       </nav>
@@ -23,7 +33,7 @@
     <main>
       <div id="particle-js" class="absolute w-full"></div>
       <section id="home" class="flex justify-center items-center gap-32 bg-transparent">
-        <div class="home-img rounded-full" >
+        <div class="home-img rounded-full">
           <img
             src="assets/img/fotoku.png"
             alt="fotoku"
@@ -36,7 +46,8 @@
           <h1 class="text-8xl font-bold leading-snug">Hi, it's <span class="text-red-400">Noeru</span></h1>
           <h3 class="typing-text text-7xl font-semibold mb-4 min-w-72">I'm a <span class="relative text-writer text-yellow-400 text-bold"></span><label for="" class="animate-ping text-red-400">|</label></h3>
           <p class="text-xl">
-            A beginner developer who loves art and beautiful website design like in a fantasy world and then tries to make it a reality. this is the story of an ordinary person who wants to realize his dream of becoming a Professional <strong><span class="text-red-400">Front-end Web</span> <span class="text-yellow-400">Developer</span></strong> .
+            A beginner developer who loves art and beautiful website design like in a fantasy world and then tries to make it a reality. this is the story of an ordinary person who wants to realize his dream of becoming a Professional
+            <strong><span class="text-red-400">Front-end Web</span> <span class="text-yellow-400">Developer</span></strong> .
           </p>
           <div class="social-icons">
             <a
@@ -62,62 +73,109 @@
           </div>
           <a
             href="#"
-            class="btn inline-block px-11 py-4 mx-3 bg-black rounded-full text-2xl text-red-400 tracking-[.3em] font-semibold border-2 border-red-400 transition ease duration-300 cursor-pointer hover:bg-red-400 hover:text-yellow-400 hover:shadow-md hover:scale-110"
+            class="btn btn-lg inline-block px-11 py-4 mx-3 bg-black rounded-full text-2xl text-white tracking-[.3em] font-semibold border-2 border-red-400 transition ease duration-300 cursor-pointer hover:bg-red-400 hover:text-yellow-400 hover:shadow-md hover:scale-110"
             >Hire me</a
           >
           <a
             href="#"
-            class="btn inline-block px-11 py-4 mx-3 bg-black rounded-full text-2xl text-red-400 tracking-[.3em] font-semibold border-2 border-red-400 transition ease duration-300 cursor-pointer hover:bg-red-400 hover:text-yellow-400 hover:shadow-md hover:scale-110"
+            class="btn btn-lg inline-block px-11 py-4 mx-3 bg-black rounded-full text-2xl text-white tracking-[.3em] font-semibold border-2 border-red-400 transition ease duration-300 cursor-pointer hover:bg-red-400 hover:text-yellow-400 hover:shadow-md hover:scale-110"
             >Download CV</a
           >
         </div>
-        
       </section>
-    
-      <section id="about-me" class="about-me px-14 py-5 mt-20">
+
+      <section id="about-me" class="about-me px-14 py-60 mt-20 ">
         <div class="container absolute flex justify-between" data-aos="zoom-in" data-aos-duration="2000">
-          <div class="box relative w-80 h-[400px] flex justify-center items-center mx-10 my-7 
-          before:absolute before:top-0 before:left-12 before:w-1/2 before:h-full before:bg-gradient-to-b before:from-red-400 before:to-yellow-400 before:rounded-lg before:skew-x-12 
-          after:absolute after:top-0 after:left-12 after:w-1/2 after:h-full after:bg-gradient-to-b after:from-red-400 after:to-yellow-400 after:rounded-lg after:skew-x-12 
-          after:blur-xl"></div>
-          <div class="box2 relative w-80 h-[400px] flex justify-center items-center mx-10 my-7 
-          before:absolute before:top-0 before:right-12 before:w-1/2 before:h-full before:bg-gradient-to-b before:from-red-400 before:to-yellow-400 before:rounded-lg before:-skew-x-12 
-          after:absolute after:top-0 after:right-12 after:w-1/2 after:h-full after:bg-gradient-to-b after:from-red-400 after:to-yellow-400 after:rounded-lg after:-skew-x-12 
-          after:blur-xl"></div>
+          <div
+            class="box relative w-80 h-[400px] flex justify-center items-center mx-10 my-7 before:absolute before:top-0 before:left-12 before:w-1/2 before:h-full before:bg-gradient-to-b before:from-red-400 before:to-yellow-400 before:rounded-lg before:skew-x-12 after:absolute after:top-0 after:left-12 after:w-1/2 after:h-full after:bg-gradient-to-b after:from-red-400 after:to-yellow-400 after:rounded-lg after:skew-x-12 after:blur-xl"
+          ></div>
+          <div
+            class="box2 relative w-80 h-[400px] flex justify-center items-center mx-10 my-7 before:absolute before:top-0 before:right-12 before:w-1/2 before:h-full before:bg-gradient-to-b before:from-red-400 before:to-yellow-400 before:rounded-lg before:-skew-x-12 after:absolute after:top-0 after:right-12 after:w-1/2 after:h-full after:bg-gradient-to-b after:from-red-400 after:to-yellow-400 after:rounded-lg after:-skew-x-12 after:blur-xl"
+          ></div>
         </div>
-        <div class="container max-w-screen-xl mx-0 my-56 flex flex-col items-center text-center divide-y divide-red-400 backdrop-blur-md bg-white/10 border border-white/10 rounded-lg"  data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container max-w-screen-xl mx-0 my-56 flex flex-col items-center text-center divide-y divide-red-400 backdrop-blur-md bg-white/10 border border-white/10 rounded-lg" data-aos="zoom-in" data-aos-duration="2000">
           <h2 class="text-5xl font-bold pb-5 w-56">About me</h2>
-          <div class="about-content flex flex-col items-center gap-5 ">
+          <div class="about-content flex flex-col items-center gap-5">
             <div class="about-text max-w-screen-md py-5">
-              <p class="text-xl mx-3 my-0">Hi! My name is <strong class="text-red-400">Adha Noer</strong>. I am a passionate <strong class="text-yellow-400">Web Developer</strong> with a knack for solving problems and creating innovative solutions. My journey started when I entered a vocational school with a major in software engineering, that's where I started to love web development until now.</p>
-              <p class="text-xl mx-3 my-0">I specialize in <strong class="text-red-400">Front-End</strong><strong class="text-yellow-400"> Web Development</strong> and have worked on projects involving <strong class="text-yellow-400">Javascript</strong>. I love learning new things and staying updated with the latest trends in my field.</p>
+              <p class="text-xl mx-3 my-0">
+                Hi! My name is <strong class="text-red-400">Adha Noer</strong>. I am a passionate <strong class="text-yellow-400">Web Developer</strong> with a knack for solving problems and creating innovative solutions. My journey started
+                when I entered a vocational school with a major in software engineering, that's where I started to love web development until now.
+              </p>
+              <p class="text-xl mx-3 my-0">
+                I specialize in <strong class="text-red-400">Front-End</strong><strong class="text-yellow-400"> Web Development</strong> and have worked on projects involving <strong class="text-yellow-400">Javascript</strong>. I love
+                learning new things and staying updated with the latest trends in my field.
+              </p>
               <p class="text-xl mx-3 my-0">Outside work, I enjoy <strong class="text-red-400">make some video content for youtube & playing video games</strong>, which helps me stay creative and balanced.</p>
             </div>
           </div>
         </div>
-        
-        <div class="banner w-full h-screen text-center overflow-hidden relative" >
-          <div class="slider absolute z-[1] " style="--quantity: 10" >
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 1"><img src="assets/img/logo/html.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 2"><img src="assets/img/logo/css.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 3"><img src="assets/img/logo/js.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 4"><img src="assets/img/logo/vue.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 5"><img src="assets/img/logo/react.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 6"><img src="assets/img/logo/tailwind.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 7"><img src="assets/img/logo/bootstrap.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 8"><img src="assets/img/logo/laravel.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 9"><img src="assets/img/logo/typescript.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
-            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 10"><img src="assets/img/logo/node.png" alt="" class="w-1/2 h-1/2 object-contain"></div>
+      </section>
+
+      <section id="tech" class="">
+        <div class="banner w-full h-screen text-center overflow-hidden absolute right-0 -mt-10">
+          <div class="slider absolute z-[1]" style="--quantity: 10">
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 1"><img src="assets/img/logo/html.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 2"><img src="assets/img/logo/css.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 3"><img src="assets/img/logo/js.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 4"><img src="assets/img/logo/vue.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 5"><img src="assets/img/logo/react.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 6"><img src="assets/img/logo/tailwind.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 7"><img src="assets/img/logo/bootstrap.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 8"><img src="assets/img/logo/laravel.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 9"><img src="assets/img/logo/typescript.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
+            <div class="item absolute inset-0 grayscale contrast-125 duration-1000 hover:grayscale-0" style="--position: 10"><img src="assets/img/logo/node.png" alt="" class="w-1/2 h-1/2 object-contain" /></div>
           </div>
-          <div class="content flex justify-center ">
-            <h1 class="text-[16em] leading-[1em] absolute bottom-1/2 z-0 text-black hover:text-yellow-400  " data-aos="zoom-in" data-aos-duration="2000">SKILLS</h1>
+          <div class="content flex justify-center">
+            <h1 class="text-[16em] leading-[1em] absolute bottom-1/2 z-0 text-black hover:text-yellow-400" data-aos="zoom-in" data-aos-duration="2000">TECHNOLOGY</h1>
           </div>
         </div>
       </section>
+
+      <section id="certificate" class="flex">
+        <div class="container flex justify-between">
+          <div class="card glass w-1/3 max-h-fit mx-4">
+            <figure>
+              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Life hack</h2>
+              <p>How to park your car at your garage?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Learn now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card glass w-1/3 max-h-fit mx-4">
+            <figure>
+              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Life hack</h2>
+              <p>How to park your car at your garage?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Learn now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card glass w-1/3 max-h-fit mx-4">
+            <figure>
+              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Life hack</h2>
+              <p>How to park your car at your garage?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Learn now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </section>
+
+      <section id="project">
       
-      <section id="tech"></section>
-      <section id="certificate"></section>
-      <section id="project"></section>
+      </section>
       <section id="contact"></section>
     </main>
     <footer></footer>
