@@ -52,7 +52,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     body: JSON.stringify(formData),
     mode: "no-cors"
   })
-  .then(() => alert("Message sent successfully!"))
+  .then(() => document.getElementById("successModal").checked = true)
   .catch(error => console.error("Error:", error));
   
 });

@@ -292,12 +292,23 @@
                   <span class="label">Message</span>
                   <textarea id="message" class="textarea textarea-bordered w-full" placeholder="Your Message" required></textarea>
                 </label>
+
                 <button type="submit" class="btn btn-primary w-full mt-4">Send</button>
               </form>
             </div>
           </div>
         </div>
       </section>
+      <input type="checkbox" id="successModal" class="modal-toggle" />
+                  <div class="modal">
+                    <div class="modal-box">
+                      <h3 class="font-bold text-lg">Success!</h3>
+                      <p class="py-4">Your message has been sent successfully.</p>
+                      <div class="modal-action">
+                        <label for="successModal" class="btn">OK</label>
+                      </div>
+                    </div>
+                  </div>
     </main>
     <footer>
       <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
