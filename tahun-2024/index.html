@@ -279,18 +279,18 @@
             <!-- Contact Form -->
             <div class="backdrop-blur-md bg-white/10 border border-white/10 rounded-2xl p-6 shadow-lg">
               <h3 class="text-2xl font-semibold mb-4">Send a Message</h3>
-              <form>
+              <form id="contactForm">
                 <label class="form-control w-full">
                   <span class="label">Name</span>
-                  <input type="text" placeholder="Your Name" class="input input-bordered w-full" required />
+                  <input type="text" id="name" placeholder="Your Name" class="input input-bordered w-full" required />
                 </label>
                 <label class="form-control w-full mt-4">
                   <span class="label">Email</span>
-                  <input type="email" placeholder="Your Email" class="input input-bordered w-full" required />
+                  <input type="email" id="email" placeholder="Your Email" class="input input-bordered w-full" required />
                 </label>
                 <label class="form-control w-full mt-4">
                   <span class="label">Message</span>
-                  <textarea class="textarea textarea-bordered w-full" placeholder="Your Message" required></textarea>
+                  <textarea id="message" class="textarea textarea-bordered w-full" placeholder="Your Message" required></textarea>
                 </label>
                 <button type="submit" class="btn btn-primary w-full mt-4">Send</button>
               </form>
