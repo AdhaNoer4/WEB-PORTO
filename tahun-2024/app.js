@@ -56,3 +56,10 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   .catch(error => console.error("Error:", error));
   
 });
+
+const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
