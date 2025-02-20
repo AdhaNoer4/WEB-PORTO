@@ -25,38 +25,37 @@
 
       <!-- Dekstop Menu -->
       <nav class="hidden md:flex text-3xl md:text-white">
-        <a href="#home" class="ml-16 font-medium transition ease duration-150 border-b-2 border-yellow-400 text-red-400">Home</a>
-        <a href="#about-me">
+        <a href="#home" class="nav-link ml-16 font-medium transition ease duration-150 border-b-2 border-yellow-400 text-red-400">Home</a>
+        <a href="#about-me" class="nav-link">
           <div class="dropdown dropdown-hover">
             <div tabindex="0" role="button" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">
               About <span><i class="fa-solid fa-caret-down"></i></span>
             </div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-              <li><a href="#tech" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Technology</a></li>
-              <li><a href="#certificate" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Certificate</a></li>
+              <li><a href="#tech" class="nav-link ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Technology</a></li>
+              <li><a href="#certificate" class="nav-link ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Certificate</a></li>
             </ul>
           </div>
         </a>
-        <a href="#project" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Project</a>
-        <a href="#contact" class="ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Contact</a>
+        <a href="#project" class="nav-link ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Project</a>
+        <a href="#contact" class="nav-link ml-16 font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Contact</a>
       </nav>
 
       <!-- Mobile Menu -->
-      <nav id="mobile-menu" class="hidden flex-col bg-gray-800 absolute w-full left-0 right-0 top-16 max-w-screen py-4 text-center space-y-4 md:hidden">
-        <a href="#home" class="block hover:text-yellow-400">Home</a>
+      <nav id="mobile-menu" class="hidden flex-col backdrop-blur-md bg-white/10 border border-white/10 rounded-lg absolute w-full left-0 right-0 top-24 max-w-screen py-4 text-center space-y-4 md:hidden">
+        <a href="#home" class="nav-link block hover:text-yellow-400">Home</a>
         <a href="#" class="block hover:text-yellow-400"><div class="dropdown dropdown-hover">
           <div tabindex="0" role="button" class=" font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">
             About <span><i class="fa-solid fa-caret-down"></i></span>
           </div>
           <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-            <li><a href="#tech" class=" font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Technology</a></li>
-            <li><a href="#certificate" class=" font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Certificate</a></li>
+            <li><a href="#tech" class="nav-link font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Technology</a></li>
+            <li><a href="#certificate" class="nav-link font-medium transition ease duration-150 border-b-2 border-transparent hover:text-red-400 hover:border-yellow-400">Certificate</a></li>
           </ul>
         </div></a>
-        <a href="#project" class="block hover:text-yellow-400">Project</a>
-        <a href="#contact" class="block hover:text-yellow-400">Contact</a>
+        <a href="#project" class="nav-link block hover:text-yellow-400">Project</a>
+        <a href="#contact" class="nav-link block hover:text-yellow-400">Contact</a>
       </nav>
-    </header>
     </header>
     <main>
       <div id="particle-js" class="absolute w-full h-[800px] md:h-full"></div>
@@ -106,7 +105,7 @@
           >
           <a
             href="#"
-            class="btn btn-lg inline-block px-11 py-4 mx-3 bg-black rounded-full text-2xl text-white tracking-[.3em] font-semibold border-2 border-red-400 transition ease duration-300 cursor-pointer hover:bg-red-400 hover:text-yellow-400 hover:shadow-md hover:scale-110"
+            class="btn btn-lg inline-block px-11 py-4 mx-3 my-3 bg-black rounded-full text-2xl text-white tracking-[.3em] font-semibold border-2 border-red-400 transition ease duration-300 cursor-pointer hover:bg-red-400 hover:text-yellow-400 hover:shadow-md hover:scale-110"
             >Download CV</a
           >
         </div>

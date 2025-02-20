@@ -63,3 +63,36 @@ const menuBtn = document.getElementById('menu-btn');
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
+//  JavaScript Smooth Scroll 
+    
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute("href").substring(1);
+    const targetPosition = document.getElementById(targetId).offsetTop;
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    const duration = 1000; // 💡 Atur durasi scroll dalam milidetik (1000ms = 1 detik)
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function easeInOutQuad(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+  });
+});
