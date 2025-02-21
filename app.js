@@ -1,4 +1,4 @@
-const text = ["Web Developer", "Gamer", "Content Creator", "Web Designer", "Front-End Developer"];
+const text = ["Web Developer", "Freelancer", "Content Creator", "Web Designer", "Front-End Developer"];
 
 let speed = 100;
 const textElements = document.querySelector(".text-writer");
@@ -50,26 +50,25 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData),
-    mode: "no-cors"
+    mode: "no-cors",
   })
-  .then(() => document.getElementById("successModal").checked = true)
-  .catch(error => console.error("Error:", error));
-  
+    .then(() => (document.getElementById("successModal").checked = true))
+    .catch((error) => console.error("Error:", error));
 });
 
-const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
 
-//  JavaScript Smooth Scroll 
-    
-document.querySelectorAll(".nav-link").forEach(link => {
+//  JavaScript Smooth Scroll
+
+document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    
+
     const targetId = this.getAttribute("href").substring(1);
     const targetPosition = document.getElementById(targetId).offsetTop;
     const startPosition = window.scrollY;
@@ -96,3 +95,53 @@ document.querySelectorAll(".nav-link").forEach(link => {
     requestAnimationFrame(animation);
   });
 });
+
+// tech text change
+const techinfo = document.getElementById("tech-info");
+const tailwind = document.getElementById("tailwind");
+const html = document.getElementById("html");
+const css = document.getElementById("css");
+const js = document.getElementById("js");
+const react = document.getElementById("react");
+const node = document.getElementById("node");
+const vue = document.getElementById("vue");
+const laravel = document.getElementById("laravel");
+const typescript = document.getElementById("typescript");
+const bootstrap = document.getElementById("bootstrap");
+
+//function remove class
+function removeClassesByPattern(element, pattern) {
+  element.classList.forEach(cls => {
+    if (cls.includes(pattern)) {
+      element.classList.remove(cls);
+    }
+  });
+}
+
+//function change text
+function changeTextTech(element, text, color) {
+  element.addEventListener("mouseover", () => {
+    techinfo.innerHTML = text;
+    removeClassesByPattern(techinfo, "hover:text");
+    techinfo.classList.add("hover:"+color);
+  });
+}
+
+techinfo.addEventListener("click", () => {
+  techinfo.innerHTML = "TECHNOLOGY";
+  removeClassesByPattern(techinfo, "hover:text");
+  techinfo.classList.add("hover:"+color);
+});
+
+  
+  changeTextTech(tailwind, "Tailwind CSS", "text-blue-400");
+  changeTextTech(html, "HTML", "text-red-400");
+  changeTextTech(css, "CSS", "text-blue-400");
+  changeTextTech(js, "JavaScript", "text-yellow-400");
+  changeTextTech(react, "React JS", "text-blue-400");
+  changeTextTech(node, "Node JS", "text-green-400");
+  changeTextTech(vue, "Vue JS", "text-green-400");
+  changeTextTech(laravel, "Laravel", "text-red-400");
+  changeTextTech(typescript, "TypeScript", "text-blue-400");
+  changeTextTech(bootstrap, "Bootstrap", "text-purple-400");
+ 
